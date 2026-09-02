@@ -1,0 +1,66 @@
+-- React Teórico --
+
+-pode ser aplicado em qualquer lugar 
+-ótimo para criações de interfaces interativas em IOS, Android react native) e desktop (electron)
+-é a tecnologia mais demandada do mercado
+
+--Componentes--
+
+no react, dividimos a aplicação em pequenos componentes. Vários componentes, quando combinamos, formam grandes estruturas. Dá para pensar nessas estruturas como se fossem peças de lego. è usado JSX para escrevê-los.
+
+
+-- Extensões --
+
+Algumas das extensões que usei no react (que eu lembro)
+
+-TailwindCss Intellisense
+-ESlint
+-Prettier (mini tutorial de como funcionar: abre as config, escreve "prettier" e desce até achar default formatter e coloca"Prettier-CodeFormater"
+
+-- Comandos terminal -- Terminar
+
+Seguinte patrão, você vai ter que colocar alguns comandos pra baixar umas coisas ai, então pega esse link da conversa do gemini e da seus pulos
+https://gemini.google.com/share/d/1ZJwEB_-Z92fgirUh7QqIsiWIxmoSn7Rm?usp=sharing
+
+npm install uuid@10.0.0 (gera um id aleatorio) 
+npm install react-router-dom@6.26.1
+
+-- React Pratica -- 
+
+Conseguimos usar elementos do javascript em um código html por meio do JSX. Nesse exemplo, ele está retornando a mensagem do elemento "message" dentro de uma div (não é possível retornar mais de um elemento, por exemplo, duas divs)
+
+function App (){
+  const message = "Ola mundo";
+  return (
+  <div>
+    <h1>{message}</h1>
+  </div>
+    
+  )
+}
+
+export default App;
+
+State(Estado): state é uma variável que muda no react, ela faz com que o componente seja renderizado novamente, ou seja, executa a função novamente e atualiza a interface. Neste exemplo, transformamos a antiga constante "message", que apenas passava o valor que iria aparecer na tela, para um state, se tornando o valor do state. O "setMessage" será a função que irá alterar o valor da mensagem modificada após apertar o botão.
+
+import { useState } from "react";
+
+function App (){
+  const [message, setMessage] = useState("Olá mundo")
+  // State (Estado)
+  return (
+  <div>
+    <h1>{message}</h1>
+    <button onClick={function()  {
+      setMessage("Ola react tocado")
+    }}
+    
+    >Mudar mensagem
+    
+    </button>
+  </div>
+    
+  )
+}
+
+export default App;
