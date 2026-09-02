@@ -8,6 +8,9 @@
 
 no react, dividimos a aplicação em pequenos componentes. Vários componentes, quando combinamos, formam grandes estruturas. Dá para pensar nessas estruturas como se fossem peças de lego. è usado JSX para escrevê-los.
 
+-- JSX (jéiesiequis) --
+
+JSX é como um html, só que dentro do código javascript. É a principal maneira de escrever html com react. Podemos interpolar variáveis, inserindo ela entre chaves "{}". Também é possível executar funções em JSX e inserir valores em atributos de tags.
 
 -- Extensões --
 
@@ -22,8 +25,18 @@ Algumas das extensões que usei no react (que eu lembro)
 Seguinte patrão, você vai ter que colocar alguns comandos pra baixar umas coisas ai, então pega esse link da conversa do gemini e da seus pulos
 https://gemini.google.com/share/d/1ZJwEB_-Z92fgirUh7QqIsiWIxmoSn7Rm?usp=sharing
 
+npm create vite@5.5.2 . (versão do vite que geralmente uso)
+npm install tailwindcss@3.4.10 postcss@8.4.41 autoprefixer@10.4.20 '@tailwind base, components e utilities' (versões que uso e oq colocar no index.css)
+npx tailwindcss init -p <-- faça isso dps que instalar as coisas de cima
+Cole isso no tailwind.config --> content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"], <-- 
 npm install uuid@10.0.0 (gera um id aleatorio) 
-npm install react-router-dom@6.26.1
+npm install react-router-dom@6.26.1 (gera as rotas para as paginas)
+
+
+-- Api --
+
+Acho que não tem muito a ver com isso aqui, mas gostaria de deixar aqui para lembrar depois. Api é um mini sistema que integra algo de um sistema maior, como conseguir dados específicos que você precisa para sua aplicação. Api é como um garçom de restaurante, você não chega lá e pede sua comida ao dono do restaurante, você pede para o garçom, e esse garçom pode falar mais de uma lingua. 
+
 
 -- React Pratica -- 
 
