@@ -1,0 +1,38 @@
+.secao-projetos{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+}
+
+.secao-projetos h2{
+    display: flex;
+    justify-content: center;
+}
+
+.lista-projetos{
+    list-style-type: none;
+}
+
+.lista-projetos img{
+    width: 80%;
+    border-radius: 10px;
+
+}
+
+.lista-projetos a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    margin: 10px;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.lista-projetos li{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
